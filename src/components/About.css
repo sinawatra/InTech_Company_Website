@@ -1,0 +1,55 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 7%;
+  background-color: white;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-box {
+  background-color: #BDFFFE;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-image img {
+  width: 583px;
+  height: 453px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.mission-vision {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission h3,
+.vision h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  gap: 29;
+}
+
+.mission p,
+.vision p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  gap: 29px;
+}
