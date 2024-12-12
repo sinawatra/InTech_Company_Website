@@ -1,0 +1,24 @@
+.features-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .feature-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feature-card {
+      width: 100%; /* Make feature cards stack on small screens */
+    }
+  }
+  
