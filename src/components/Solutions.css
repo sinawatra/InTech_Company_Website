@@ -1,46 +1,89 @@
 .solutions-section {
-  padding: 40px 10%; /* Reduced padding from 50px to 40px */
+  padding: 40px 10%;
   background-color: #fff;
+  text-align: center; /* Center aligns the heading */
 }
 
-.solutions-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px; /* Reduced margin-bottom from 40px to 30px */
-  width: 474px;
-  height: 58px;
-  top: 696px;
-  left: 161px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: "inter", sans-serif;
+.solutions-section h2{
+  font-size: 2.1rem;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold; /* Matches the bold font in the image */
+  text-align: left;
 }
 
 .solutions-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 50px; /* Reduced gap from 50px to 40px */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures responsive cards */
+  gap: 40px; /* Adjusted gap for better spacing */
 }
 
 .solution-card {
-  padding: 10px; /* Reduced padding from 10px to 8px */
+  padding: 40px; /* Reduced padding for a smaller card size */
   border: 0 solid #ddd;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  background-color: #fafafa;
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Rounded corners for the cards */
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean UI */
+  text-align: center; /* Center aligns content within the card */
+  transition: transform 0.3s ease; /* Adds a hover animation */
+  height: 300px; /* Set fixed height to reduce overall card size */
+}
+
+.solution-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover for interactivity */
+}
+
+.solution-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  border-radius: 10px; /* Ensures images match the card's style */
+  max-height: 120px; /* Limits the image height to maintain card size */
 }
 
 .solution-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 5px; /* Reduced margin for smaller spacing */
+  font-weight: 620; /* Matches the heading's boldness */
 }
 
 .solution-card p {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
+  color: #555; /* Soft gray color for the text */
+  line-height: 1.4;
+  margin-bottom: 10px; /* Added spacing at the bottom */
 }
 
-.solution-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px; /* Reduced margin-bottom from 20px to 15px */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .solutions-container {
+    grid-template-columns: 1fr; /* Only 1 card per row on smaller screens */
+  }
+
+  .solution-card {
+    height: auto; /* Let height adjust for smaller screens if content grows */
+    padding: 10px; /* Reduced padding */
+  }
+
+  .solution-card img {
+    max-height: 100px; /* Further limit image height on smaller screens */
+  }
+
+  .solution-card h3 {
+    font-size: 1.4rem; /* Reduce font size for headings */
+  }
+
+  .solution-card p {
+    font-size: 1.2rem; /* Reduce font size for description text */
+  }
+}
+
+@media (max-width: 480px) {
+  .solutions-container {
+    grid-template-columns: 1fr; /* Keep single-column layout for small screens */
+  }
+
+  .solution-card {
+    height: auto; /* Maintain smaller height for compact view */
+  }
 }
