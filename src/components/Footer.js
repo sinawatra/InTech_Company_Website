@@ -26,19 +26,19 @@ const Footer = () => {
           </p>
           <p>012 345 678</p>
           <div className="social-icons">
-  <a href="https://www.telegram.com" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/sinawatra" target="_blank" rel="noopener noreferrer">
     <img src={require('./Images/telegram.png')} alt="telegram" className="social-icon" />
     </a>
 
-    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/sinawatra" target="_blank" rel="noopener noreferrer">
     <img src={require('./Images/instagram.png')} alt="instagram" className="social-icon" />
     </a>
 
-    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/sinawatra" target="_blank" rel="noopener noreferrer">
     <img src={require('./Images/facebook.png')} alt="Facebook" className="social-icon" />
     </a>
 
-    <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/sinawatra" target="_blank" rel="noopener noreferrer">
     <img src={require('./Images/X.png')} alt="x" className="social-icon" />
     </a>
     </div>
