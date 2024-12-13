@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './HeroSection.css';
 
 function HeroSection() {
+  const [isHoveredLearnMore, setIsHoveredLearnMore] = useState(false);
+
+  const handleMouseEnterLearnMore = () => setIsHoveredLearnMore(true);
+  const handleMouseLeaveLearnMore = () => setIsHoveredLearnMore(false);
+
   return (
     <section className="hero-section" id="hero-section">
       <div className="hero-text">
@@ -12,7 +17,19 @@ function HeroSection() {
           <span> Smart Technology!</span>
         </h1>
         <p>Explore our cutting-edge solutions designed to simplify and secure your business operations.</p>
-        <button className="learn-more">Learn More</button>
+        
+        {/* Learn More Button */}
+        <div className="learn-more-container">
+          <button 
+            className="learn-more" 
+            aria-label="Learn More"
+            onMouseEnter={handleMouseEnterLearnMore}
+            onMouseLeave={handleMouseLeaveLearnMore}
+          >
+            Learn More
+          </button>
+          {isHoveredLearnMore && <div className="constructing-text">Constructing...</div>}
+        </div>
       </div>
       <div className="hero-image">
         <div className="rectangle-1"></div>

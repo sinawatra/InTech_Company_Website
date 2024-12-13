@@ -25,9 +25,16 @@
 }
 
 .social-icons img {
-  width: 40px; /* Reduced icon size */
+  width: 50px; /* Reduced icon size */
   padding: 4px;
   cursor: pointer;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+  opacity: 0.8; /* Add subtle opacity change */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add a nice shadow effect */
+  filter: brightness(1.2); /* Slightly brighten the icon */
 }
 
 .quick-links ul {
@@ -41,6 +48,7 @@
 }
 
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -48,59 +56,58 @@
   }
 
   .footer-left {
-    font-size: 24px; /* Smaller font size for smaller screens */
-    text-align: center; /* Reduced margin for compactness */
+    font-size: 24px;
+    text-align: center;
   }
 
   .footer-right {
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Make sure right section takes full width */
-    padding: 5px 0; /* Reduced padding */
+    width: 100%;
+    padding: 5px 0;
   }
 
   .quick-links,
   .contact-info {
     text-align: center;
-    margin-bottom: 8px; /* Reduced margin between sections */
-    font-size: 0.7rem; /* Smaller font size */
+    margin-bottom: 8px;
+    font-size: 0.7rem;
   }
 
-  /* Adjust quick links to display in a row on smaller screens */
   .quick-links ul {
     display: flex;
     justify-content: center;
-    gap: 12px; /* Space between list items */
+    gap: 12px;
   }
 
   .quick-links ul li {
-    margin-bottom: 0; /* Remove bottom margin for row layout */
+    margin-bottom: 0;
   }
 
   .social-icons img {
     width: 30px; /* Resize social icons further */
-    margin: 6px; /* Reduced margin between icons */
+    margin: 6px;
   }
 
   /* Further adjustments for very small screens */
   @media (max-width: 480px) {
     .footer-left {
-      font-size: 20px; /* Even smaller font size */
-      font-weight: bolder; /* Bolder text for emphasis */
+      font-size: 20px;
+      font-weight: bolder;
     }
 
     .quick-links,
     .contact-info {
-      font-size: 0.6rem; /* Further reduced font size */
-      margin-bottom: 4px; /* Reduced gap */
+      font-size: 0.6rem;
+      margin-bottom: 4px;
     }
 
     .social-icons img {
-      width: 25px; /* Even smaller icons */
+      width: 40px;
     }
 
     .quick-links ul li {
-      margin-bottom: 0; /* No margin for items in row */
+      margin-bottom: 0;
     }
   }
 }

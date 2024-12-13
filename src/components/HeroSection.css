@@ -55,6 +55,27 @@
   transform: scale(1.05);
 }
 
+/* New Container for Learn More Button and Constructing Text */
+.learn-more-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Constructing Text Style */
+.constructing-text {
+  font-size: 0.9rem;
+  color: #000;
+  margin-top: 5px; /* Space between the button and text */
+  text-align: center;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.learn-more-container:hover .constructing-text {
+  opacity: 1;
+}
+
 .hero-image {
   position: relative;
   width: 50%;
@@ -71,7 +92,6 @@
   height: 408px;
   top: 140px;
   left: 95px;
-  
 }
 
 .rectangle-1 {
@@ -147,7 +167,7 @@
     left: 200px;
     background-color: rgba(245, 182, 80, 1);
   }
-  
+
   .rectangle-2 {
     position: absolute;
     z-index: 1;

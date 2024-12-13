@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import logo from './Images/logo.png'; // Adjust the path as necessary
 
 function Header() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
+
   return (
     <header className="header">
       <div className="logo">
@@ -16,9 +21,17 @@ function Header() {
           <li><a href="#footer" className="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <button className="request-demo" aria-label="Request Demo">
-        Request Demo
-      </button>
+      <div className="request-demo-container">
+        <button 
+          className="request-demo" 
+          aria-label="Request Demo"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          Request Demo
+        </button>
+        {isHovered && <div className="constructing-text">Constructing...!!</div>}
+      </div>
     </header>
   );
 }
