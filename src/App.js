@@ -16,6 +16,8 @@ function App() {
       <Solutions />
       <CallToAction />
       <About />
+      <script async="async" data-cfasync="false" src="//pl25736586.profitablecpmrate.com/754044df319164f182a4ceff19af633c/invoke.js"></script>
+<div id="container-754044df319164f182a4ceff19af633c"></div>
       <Footer />
     </div>
   );
