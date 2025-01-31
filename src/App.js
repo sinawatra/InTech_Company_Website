@@ -10,6 +10,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <script type='text/javascript' src='//pl25736454.profitablecpmrate.com/bc/1f/f8/bc1ff861347bc84350769aa613ddbeeb.js'></script>
       <Header />
       <HeroSection />
       <Solutions />
