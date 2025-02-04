@@ -33,6 +33,7 @@ const Features = () => {
             <p>{feature.description}</p>
           </div>
         ))}
+        <script type='text/javascript' src='//pl25736454.profitablecpmrate.com/bc/1f/f8/bc1ff861347bc84350769aa613ddbeeb.js'></script>
       </div>
     </section>
   );
